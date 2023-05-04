@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
 
-    [SerializeField] private float speed = 2f;
+    [SerializeField] private float speed = 10f;
     private bool isGrounded = false;
     
     private Rigidbody2D rb;
