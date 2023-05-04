@@ -1,4 +1,4 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,5 +22,5 @@ public class CameraControl : MonoBehaviour
 
         transform.position = Vector3.Lerp(transform.position, pos, Time.deltaTime);
     }
-}*/
+}
  
