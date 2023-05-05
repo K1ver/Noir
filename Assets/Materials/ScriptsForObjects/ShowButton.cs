@@ -6,7 +6,6 @@ using TMPro;
 public class ShowButton : MonoBehaviour
 {
 
-    // Update is called once per frame
     public GameObject useItem;
 
 

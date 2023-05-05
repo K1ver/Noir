@@ -58,9 +58,6 @@ public class Movement : MonoBehaviour
 
         if (Input.GetButton("Horizontal"))
             Run();
-            
-
-        //moveSound.Stop();
     }
 
     private void Falling()

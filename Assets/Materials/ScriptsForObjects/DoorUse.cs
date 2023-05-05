@@ -4,53 +4,48 @@ using UnityEngine;
 
 public class DoorUse : MonoBehaviour
 {
-    public GameObject door;
-    private bool onTrigger = false;
-    private Animator anim;
-
-
-    private States state
-    {
-        get { return (States)anim.GetInteger("AnimState"); }
-        set { anim.SetInteger("AnimState", (int)value); }
-    }
-
-    private void Awake()
-    {
-        anim = GetComponent<Animator>();
-    }
+    [SerializeField] public GameObject door;
+    [SerializeField] public Animator anim;
+    private bool isTrigger = false;
+    private bool doorOpened = false;
 
     private void OnTriggerStay2D(Collider2D col)
     {
-        onTrigger = true;
+        isTrigger = true;
     }
 
     private void OnTriggerExit2D(Collider2D col)
     {
-        onTrigger = false;
+        isTrigger = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && (int)state == (int)States.close && onTrigger)
+        if (Input.GetKeyDown(KeyCode.E) && isTrigger)
         {
-            state = States.open;
-            door.SetActive(false);
+            if (doorOpened == true)
+            {
+                DoorClosing();
+            } else
+            {
+                DoorOpening();
+            }
+                
         }
-            
-        if (Input.GetKeyDown(KeyCode.E) && state == States.open && onTrigger)
-        {
-            state = States.close;
-            door.SetActive(true);
-        }
-
-            
     }
 
-    private enum States
+    private void DoorOpening()
     {
-        open,
-        close
+        doorOpened = true;
+        door.GetComponent<Collider2D>().enabled = false;
+        anim.SetBool("DoorOpened", true);
     }
+
+    private void DoorClosing()
+    {
+        doorOpened = false;
+        door.GetComponent<Collider2D>().enabled = true;
+        anim.SetBool("DoorOpened", false);
+    }
+
 }
