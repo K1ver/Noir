@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-
+    [SerializeField] private AudioSource run;
+    [SerializeField] private AudioSource runStop;
     [SerializeField] private float speed = 10f;
     private bool isGrounded = false;
     
     private Rigidbody2D rb;
     private Animator anim;
     private SpriteRenderer sprite;
-
 
     private States state
     {
@@ -24,12 +24,15 @@ public class Movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
+        run = GetComponent<AudioSource>();
     }
 
     private void Run()
     {
-
-        if (isGrounded) state = States.runStart;
+        if (isGrounded)
+        {
+            state = States.runStart;
+        }
 
         Vector3 dir = transform.right * Input.GetAxis("Horizontal");
 
@@ -38,19 +41,26 @@ public class Movement : MonoBehaviour
         sprite.flipX = dir.x < 0.0f;
     }
 
-    private void FixedUpdate()
-    {
-        
-    }
-
     private void Update()
     {
         Falling();
+        if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.35f)
+        {
+            if (!run.isPlaying) run.Play();
+
+        }
+        else
+        {
+            run.Stop();
+        }
         if (isGrounded) state = States.idle;
-        
+
+
         if (Input.GetButton("Horizontal"))
             Run();
+            
 
+        //moveSound.Stop();
     }
 
     private void Falling()
