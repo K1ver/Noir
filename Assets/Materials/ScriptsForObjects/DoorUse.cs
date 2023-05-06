@@ -6,6 +6,8 @@ public class DoorUse : MonoBehaviour
 {
     [SerializeField] public GameObject door;
     [SerializeField] public Animator anim;
+    [SerializeField] public AudioSource soundDoorOpening;
+    [SerializeField] public AudioSource soundDoorClosing;
     private bool isTrigger = false;
     private bool doorOpened = false;
 
@@ -39,6 +41,7 @@ public class DoorUse : MonoBehaviour
         doorOpened = true;
         door.GetComponent<Collider2D>().enabled = false;
         anim.SetBool("DoorOpened", true);
+        soundDoorOpening.Play();
     }
 
     private void DoorClosing()
@@ -46,6 +49,7 @@ public class DoorUse : MonoBehaviour
         doorOpened = false;
         door.GetComponent<Collider2D>().enabled = true;
         anim.SetBool("DoorOpened", false);
+        soundDoorClosing.Play();
     }
 
 }
