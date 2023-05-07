@@ -6,7 +6,7 @@ public class LampFlicker : MonoBehaviour
 {
     [SerializeField] public GameObject light;
 
-    private int time = 5;
+    private int time;
 
     private void Start() {
 
@@ -14,7 +14,7 @@ public class LampFlicker : MonoBehaviour
     }
     
     private IEnumerator Flick(){
-        time = Random.Range(1, 3);
+        time = Random.Range(5, 15);
 
         yield return new WaitForSeconds(time);
 
