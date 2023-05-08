@@ -74,6 +74,7 @@ public class DialogueManager : MonoBehaviour
     {
         boxAnim.SetBool("BoxOpen", false);
         iconAnim.SetBool("IconOpen", false);
+        currentSprite = 0;
     }
 
     public void Update()
