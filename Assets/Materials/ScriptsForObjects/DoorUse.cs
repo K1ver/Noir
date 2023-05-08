@@ -5,7 +5,8 @@ using UnityEngine;
 public class DoorUse : MonoBehaviour
 {
     [SerializeField] public GameObject door;
-    [SerializeField] public Animator anim;
+    [SerializeField] public Animator animDoor;
+    [SerializeField] public Animator animDetective;
     [SerializeField] public AudioSource soundDoorOpening;
     [SerializeField] public AudioSource soundDoorClosing;
     private bool isTrigger = false;
@@ -23,8 +24,11 @@ public class DoorUse : MonoBehaviour
 
     private void Update()
     {
+        
         if (Input.GetKeyDown(KeyCode.E) && isTrigger)
         {
+            animDetective.SetInteger("AnimState", 2);
+            
             if (doorOpened == true)
             {
                 DoorClosing();
@@ -32,15 +36,17 @@ public class DoorUse : MonoBehaviour
             {
                 DoorOpening();
             }
-                
+
+            //animDetective.SetBool("DoorUse", false);
         }
+        
     }
 
     private void DoorOpening()
     {
         doorOpened = true;
         door.GetComponent<Collider2D>().enabled = false;
-        anim.SetBool("DoorOpened", true);
+        animDoor.SetBool("DoorOpened", true);
         soundDoorOpening.Play();
     }
 
@@ -48,7 +54,7 @@ public class DoorUse : MonoBehaviour
     {
         doorOpened = false;
         door.GetComponent<Collider2D>().enabled = true;
-        anim.SetBool("DoorOpened", false);
+        animDoor.SetBool("DoorOpened", false);
         soundDoorClosing.Play();
     }
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class DialogueManager : MonoBehaviour
@@ -9,6 +10,10 @@ public class DialogueManager : MonoBehaviour
 
     public Animator boxAnim;
     public Animator iconAnim;
+
+    public Image ImgObj;
+    private int currentSprite = 0;
+    private Sprite[] spriteImage;
 
     private Queue<string> sentences;
 
@@ -27,6 +32,9 @@ public class DialogueManager : MonoBehaviour
             sentences.Enqueue(sentence);
         }
 
+        spriteImage = dialogue.spriteArray;
+
+
         DisplayNextSentence();
     }
 
@@ -39,6 +47,16 @@ public class DialogueManager : MonoBehaviour
         }
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
+        if(spriteImage.Length == 1)
+        {
+            ImgObj.sprite = spriteImage[currentSprite];
+        }
+        else
+        {
+            ImgObj.sprite = spriteImage[currentSprite];
+            currentSprite++;
+        }
+        
         StartCoroutine(TypeSentence(sentence));
     }
 

@@ -8,6 +8,12 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     private bool isTrigger = false;
     private bool dialogueStart = false;
+    private BoxCollider2D coll;
+
+    private void Awake()
+    {
+        coll = GetComponent<BoxCollider2D>();
+    }
 
     public void TriggerDialogue()
     {
@@ -27,8 +33,9 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && isTrigger && !dialogueStart)
         {
-            dialogueStart = true;
             TriggerDialogue();
+            dialogueStart = true;
+            coll.enabled = false;
         }
     }
 }
