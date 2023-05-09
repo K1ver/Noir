@@ -9,6 +9,11 @@ public class DialogueTrigger : MonoBehaviour
     private bool isTrigger = false;
     private bool dialogueStart = false;
     private BoxCollider2D coll;
+    
+    public bool IsTrigger{
+        get {return isTrigger;}
+        set {isTrigger = value;}
+    }
 
     private void Awake()
     {
@@ -21,21 +26,25 @@ public class DialogueTrigger : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D col)
     {
-        isTrigger = true;
+        IsTrigger = true;
     }
 
     private void OnTriggerExit2D(Collider2D col)
     {
-        isTrigger = false;
+        IsTrigger = false;
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && isTrigger && !dialogueStart)
         {
+            PlayerManager.UsedObjects = 1;
+            Debug.Log(PlayerManager.UsedObjects);
             TriggerDialogue();
             dialogueStart = true;
             coll.enabled = false;
+
+
         }
     }
 }

@@ -11,6 +11,7 @@ public class DoorUse : MonoBehaviour
     [SerializeField] public AudioSource soundDoorClosing;
     private bool isTrigger = false;
     private bool doorOpened = false;
+    private bool lockationEnded = false;
 
     private void OnTriggerStay2D(Collider2D col)
     {
@@ -24,8 +25,10 @@ public class DoorUse : MonoBehaviour
 
     private void Update()
     {
-        
-        if (Input.GetKeyDown(KeyCode.E) && isTrigger)
+        if (PlayerManager.UsedObjects >= 5)
+            lockationEnded = true;
+
+        if (Input.GetKeyDown(KeyCode.E) && isTrigger && lockationEnded)
         {
             animDetective.SetInteger("AnimState", 2);
             
