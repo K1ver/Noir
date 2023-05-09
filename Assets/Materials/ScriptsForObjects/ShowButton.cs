@@ -7,16 +7,30 @@ public class ShowButton : MonoBehaviour
 {
 
     public GameObject useItem;
-
+    private bool isTrigger = false;
 
     private void OnTriggerStay2D(Collider2D col)
     {
-        useItem.SetActive(true);
+        isTrigger = true;
     }
 
     private void OnTriggerExit2D(Collider2D col)
     {
-        useItem.SetActive(false);
+        isTrigger = false;
+    }
+
+    private void Update()
+    {
+        if (isTrigger)
+        {
+            useItem.SetActive(true);
+        }
+        else 
+        {
+            useItem.SetActive(false);
+        }
+
+        
     }
 
 }

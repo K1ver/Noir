@@ -7038,6 +7038,10 @@ PrefabInstance:
       value: 0.483
       objectReference: {fileID: 0}
     - target: {fileID: 8600555183777560872, guid: 4ab8b1ab3d0ff8b42b45407f09663098, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8600555183777560872, guid: 4ab8b1ab3d0ff8b42b45407f09663098, type: 3}
       propertyPath: spriteArray.Array.data[0]
       value: 
       objectReference: {fileID: 21300000, guid: bef93b4c9a865494eb103ff1c0bb8bbf, type: 3}
@@ -7682,6 +7686,10 @@ PrefabInstance:
       propertyPath: useItem
       value: 
       objectReference: {fileID: 221768285}
+    - target: {fileID: 5645369616170429561, guid: 4ab8b1ab3d0ff8b42b45407f09663098, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6976225072369690842, guid: 4ab8b1ab3d0ff8b42b45407f09663098, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -7886,6 +7894,10 @@ PrefabInstance:
     - target: {fileID: 7730134288363540898, guid: 4ab8b1ab3d0ff8b42b45407f09663098, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0.448
+      objectReference: {fileID: 0}
+    - target: {fileID: 8600555183777560872, guid: 4ab8b1ab3d0ff8b42b45407f09663098, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8600555183777560872, guid: 4ab8b1ab3d0ff8b42b45407f09663098, type: 3}
       propertyPath: spriteArray.Array.data[0]

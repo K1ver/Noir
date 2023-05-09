@@ -11,6 +11,9 @@ public class PhoneDialogueManager : MonoBehaviour
         usedObj = PlayerManager.UsedObjects;
         if (usedObj >= 4){
             this.GetComponent<DialogueTrigger>().enabled = true;
+            this.GetComponent<ChangeSprite>().enabled = true;
+            this.GetComponent<ShowButton>().enabled = true;
+
         }
     }
 }
