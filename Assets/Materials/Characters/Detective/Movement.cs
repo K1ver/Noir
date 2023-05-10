@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private AudioSource runStop;
     [SerializeField] private float speed = 10f;
     private bool isGrounded = false;
+    private bool isDialogue = false;
     
     private Rigidbody2D rb;
     private Animator anim;
@@ -43,6 +44,9 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
+
+        isDialogue = DialogueManager.IsDialogue;
+
         Falling();
         if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.35f)
         {
@@ -55,7 +59,7 @@ public class Movement : MonoBehaviour
         if (isGrounded) state = States.idle;
 
 
-        if (Input.GetButton("Horizontal"))
+        if (Input.GetButton("Horizontal") && !isDialogue)
             Run();
     }
 

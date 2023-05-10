@@ -17,8 +17,15 @@ public class DialogueManager : MonoBehaviour
     public Image ImgObj;
     private int currentSprite = 0;
     private Sprite[] spriteImage;
-
     private Queue<string> sentences;
+
+    private static bool isDialogue;
+
+    public static bool IsDialogue
+    {
+        get { return isDialogue; }
+        set { isDialogue = value; }
+    }
 
     private void Start()
     {
@@ -27,10 +34,9 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        detective.GetComponent<Movement>().enabled = false;
-        detective.GetComponent<AudioSource>().enabled = false;
         detectiveAnim.SetInteger("AnimState", 0);
-        
+        isDialogue = true;
+
 
         boxAnim.SetBool("BoxOpen", true);
         iconAnim.SetBool("IconOpen", true);
@@ -82,9 +88,7 @@ public class DialogueManager : MonoBehaviour
     {
         boxAnim.SetBool("BoxOpen", false);
         iconAnim.SetBool("IconOpen", false);
-        detective.GetComponent<Movement>().enabled = true;
-        detective.GetComponent<AudioSource>().enabled = true;
-        currentSprite = 0;
+        isDialogue = false;
     }
 
     public void Update()
