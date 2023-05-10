@@ -26,7 +26,11 @@ public class DoorUse : MonoBehaviour
     private void Update()
     {
         if (PlayerManager.UsedObjects >= 5)
+        {
             lockationEnded = true;
+            this.GetComponent<ShowButton>().enabled = true;
+        }
+            
 
         if (Input.GetKeyDown(KeyCode.E) && isTrigger && lockationEnded)
         {
@@ -39,8 +43,6 @@ public class DoorUse : MonoBehaviour
             {
                 DoorOpening();
             }
-
-            //animDetective.SetBool("DoorUse", false);
         }
         
     }

@@ -47,7 +47,6 @@ public class Movement : MonoBehaviour
         if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.35f)
         {
             if (!run.isPlaying) run.Play();
-
         }
         else
         {
