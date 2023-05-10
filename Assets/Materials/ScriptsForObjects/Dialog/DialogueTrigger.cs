@@ -43,8 +43,6 @@ public class DialogueTrigger : MonoBehaviour
             TriggerDialogue();
             dialogueStart = true;
             coll.enabled = false;
-
-
         }
     }
 }
