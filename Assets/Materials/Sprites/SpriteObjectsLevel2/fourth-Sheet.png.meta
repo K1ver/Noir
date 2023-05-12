@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 38b1c37fde9111d4d910ed9d8eeba456
+guid: f85b8b33f2d7ba341b352a1fbd236940
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,143 +101,110 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CityBackground_0
+      name: fourth-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1919
-        height: 656
+        width: 1920
+        height: 423
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a86b1f0b63208148a5d90c934622e1f
-      internalID: 1971765037
+      spriteID: ddffa710dc375c54dba12d06dab67129
+      internalID: 1291540136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CityBackground_1
+      name: fourth-Sheet_1
       rect:
         serializedVersion: 2
-        x: 1919
+        x: 1920
         y: 0
-        width: 1919
-        height: 656
+        width: 1920
+        height: 423
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f22ad12947fdfd41a3b0267d90e5272
-      internalID: -75082539
+      spriteID: c38cc947b5bde4a4d9f69d03e8d1b3af
+      internalID: 1352327280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CityBackground_2
+      name: fourth-Sheet_2
       rect:
         serializedVersion: 2
-        x: 3838
+        x: 3840
         y: 0
-        width: 1919
-        height: 656
+        width: 1920
+        height: 423
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 637d275135be77a43b4b171b599527a7
-      internalID: -452139929
+      spriteID: 239edba38529e0c4abd87f072ac40283
+      internalID: -796476302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CityBackground_3
+      name: fourth-Sheet_3
       rect:
         serializedVersion: 2
-        x: 5757
+        x: 5760
         y: 0
-        width: 1919
-        height: 656
+        width: 1920
+        height: 423
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c701d3e82cf3044fa87b6e55f5cc32e
-      internalID: -998583417
+      spriteID: 8be8c78f5aa894c4d9ef245a7ecb2cbc
+      internalID: -2098677229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CityBackground_4
+      name: fourth-Sheet_4
       rect:
         serializedVersion: 2
-        x: 7676
+        x: 7680
         y: 0
-        width: 1919
-        height: 656
+        width: 1920
+        height: 423
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e015828b646221f4083a03d0e3ce74d3
-      internalID: 838648782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CityBackground_5
-      rect:
-        serializedVersion: 2
-        x: 9595
-        y: 0
-        width: 1919
-        height: 656
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a9755ba6a2d58146bdcc5daf9e098f1
-      internalID: 1935257778
+      spriteID: 3cb6c7df906876a46a4d4368d9582205
+      internalID: 352749293
       vertices: []
       indices: 
       edges: []
@@ -253,12 +220,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CityBackground_0: 1971765037
-      CityBackground_1: -75082539
-      CityBackground_2: -452139929
-      CityBackground_3: -998583417
-      CityBackground_4: 838648782
-      CityBackground_5: 1935257778
+      fourth-Sheet_0: 1291540136
+      fourth-Sheet_1: 1352327280
+      fourth-Sheet_2: -796476302
+      fourth-Sheet_3: -2098677229
+      fourth-Sheet_4: 352749293
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

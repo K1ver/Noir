@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 38b1c37fde9111d4d910ed9d8eeba456
+guid: ece252e4beda9c74c9fe17707cff8ae7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,29 +101,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CityBackground_0
+      name: taxiNoColorPix-Sheet-export_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1919
-        height: 656
+        width: 1494
+        height: 837
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a86b1f0b63208148a5d90c934622e1f
-      internalID: 1971765037
+      spriteID: d154d1ff91b628d4e9352fca721afb9c
+      internalID: 231299777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CityBackground_1
+      name: taxiNoColorPix-Sheet-export_1
       rect:
         serializedVersion: 2
-        x: 1919
+        x: 1494
         y: 0
-        width: 1919
-        height: 656
+        width: 1494
+        height: 837
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f22ad12947fdfd41a3b0267d90e5272
-      internalID: -75082539
+      spriteID: 91a036ef475be2d49a076422d768831d
+      internalID: -1162313287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CityBackground_2
+      name: taxiNoColorPix-Sheet-export_2
       rect:
         serializedVersion: 2
-        x: 3838
+        x: 2988
         y: 0
-        width: 1919
-        height: 656
+        width: 1494
+        height: 837
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 637d275135be77a43b4b171b599527a7
-      internalID: -452139929
+      spriteID: 2433521534dc4e9429f7dc6623ed336e
+      internalID: 2053670361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CityBackground_3
+      name: taxiNoColorPix-Sheet-export_3
       rect:
         serializedVersion: 2
-        x: 5757
+        x: 4482
         y: 0
-        width: 1919
-        height: 656
+        width: 1494
+        height: 837
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c701d3e82cf3044fa87b6e55f5cc32e
-      internalID: -998583417
+      spriteID: 6b1c524cbb340e444abb394df88f536f
+      internalID: -286797650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CityBackground_4
+      name: taxiNoColorPix-Sheet-export_4
       rect:
         serializedVersion: 2
-        x: 7676
+        x: 5976
         y: 0
-        width: 1919
-        height: 656
+        width: 1494
+        height: 837
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e015828b646221f4083a03d0e3ce74d3
-      internalID: 838648782
+      spriteID: fbd2c7baae3739b4aa2eaa966a60210a
+      internalID: -1686653371
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CityBackground_5
+      name: taxiNoColorPix-Sheet-export_5
       rect:
         serializedVersion: 2
-        x: 9595
+        x: 7470
         y: 0
-        width: 1919
-        height: 656
+        width: 1494
+        height: 837
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,8 +224,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a9755ba6a2d58146bdcc5daf9e098f1
-      internalID: 1935257778
+      spriteID: 2d62b4d4e5bca9b4e843b5c42e83bde9
+      internalID: 590045184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taxiNoColorPix-Sheet-export_6
+      rect:
+        serializedVersion: 2
+        x: 8964
+        y: 0
+        width: 1494
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2da2818af56db94687f90c61404bf89
+      internalID: 549959091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taxiNoColorPix-Sheet-export_7
+      rect:
+        serializedVersion: 2
+        x: 10458
+        y: 0
+        width: 1494
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9baa39880c9b224a890d7dab0c05b7d
+      internalID: -975930790
       vertices: []
       indices: 
       edges: []
@@ -253,12 +283,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CityBackground_0: 1971765037
-      CityBackground_1: -75082539
-      CityBackground_2: -452139929
-      CityBackground_3: -998583417
-      CityBackground_4: 838648782
-      CityBackground_5: 1935257778
+      taxiNoColorPix-Sheet-export_0: 231299777
+      taxiNoColorPix-Sheet-export_1: -1162313287
+      taxiNoColorPix-Sheet-export_2: 2053670361
+      taxiNoColorPix-Sheet-export_3: -286797650
+      taxiNoColorPix-Sheet-export_4: -1686653371
+      taxiNoColorPix-Sheet-export_5: 590045184
+      taxiNoColorPix-Sheet-export_6: 549959091
+      taxiNoColorPix-Sheet-export_7: -975930790
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
