@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e989c4d17b8857f4f86501a95fe4e3bc
+guid: 38b1c37fde9111d4d910ed9d8eeba456
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: alcoColor_0
+      name: CityBackground_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
+        width: 1919
+        height: 656
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4826cbd93fd2d2c448a8a550299f877f
-      internalID: 108926977
+      spriteID: 1a86b1f0b63208148a5d90c934622e1f
+      internalID: 1971765037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alcoColor_1
+      name: CityBackground_1
       rect:
         serializedVersion: 2
-        x: 128
+        x: 1919
         y: 0
-        width: 128
-        height: 128
+        width: 1919
+        height: 656
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 424c0b34c27f571469c93bdc00c7a76e
-      internalID: 1404369334
+      spriteID: 4f22ad12947fdfd41a3b0267d90e5272
+      internalID: -75082539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alcoColor_2
+      name: CityBackground_2
       rect:
         serializedVersion: 2
-        x: 256
+        x: 3838
         y: 0
-        width: 128
-        height: 128
+        width: 1919
+        height: 656
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 541d09977da6be347adb804b2ccca4f8
-      internalID: -486138009
+      spriteID: 637d275135be77a43b4b171b599527a7
+      internalID: -452139929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alcoColor_3
+      name: CityBackground_3
       rect:
         serializedVersion: 2
-        x: 384
+        x: 5757
         y: 0
-        width: 128
-        height: 128
+        width: 1919
+        height: 656
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fb875d4974e8084788259da760050a5
-      internalID: 38791438
+      spriteID: 5c701d3e82cf3044fa87b6e55f5cc32e
+      internalID: -998583417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alcoColor_4
+      name: CityBackground_4
       rect:
         serializedVersion: 2
-        x: 512
+        x: 7676
         y: 0
-        width: 128
-        height: 128
+        width: 1919
+        height: 656
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13c28752a3348ff489b273c70681f4b3
-      internalID: -62803001
+      spriteID: e015828b646221f4083a03d0e3ce74d3
+      internalID: 838648782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alcoColor_5
+      name: CityBackground_5
       rect:
         serializedVersion: 2
-        x: 640
+        x: 9595
         y: 0
-        width: 128
-        height: 128
+        width: 1919
+        height: 656
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14a44f4fdb5d7974396ba0d804140ba3
-      internalID: -749436665
+      spriteID: 9a9755ba6a2d58146bdcc5daf9e098f1
+      internalID: 1935257778
       vertices: []
       indices: 
       edges: []
@@ -253,12 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      alcoColor_0: 108926977
-      alcoColor_1: 1404369334
-      alcoColor_2: -486138009
-      alcoColor_3: 38791438
-      alcoColor_4: -62803001
-      alcoColor_5: -749436665
+      CityBackground_0: 1971765037
+      CityBackground_1: -75082539
+      CityBackground_2: -452139929
+      CityBackground_3: -998583417
+      CityBackground_4: 838648782
+      CityBackground_5: 1935257778
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
