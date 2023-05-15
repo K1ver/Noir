@@ -48,14 +48,18 @@ public class Movement : MonoBehaviour
         isDialogue = DialogueManager.IsDialogue;
 
         Falling();
-        if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.35f)
+        if (!isDialogue)
         {
-            if (!run.isPlaying) run.Play();
+            if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.35f)
+            {
+                if (!run.isPlaying) run.Play();
+            }
+            else
+            {
+                run.Stop();
+            }
         }
-        else
-        {
-            run.Stop();
-        }
+        
         if (isGrounded) state = States.idle;
 
 
