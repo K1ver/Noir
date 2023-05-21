@@ -9,10 +9,11 @@ public class Movement : MonoBehaviour
     [SerializeField] private float speed = 10f;
     private bool isGrounded = false;
     private bool isDialogue = false;
-    
+
     private Rigidbody2D rb;
     private Animator anim;
     private SpriteRenderer sprite;
+
 
     private States state
     {
@@ -48,6 +49,10 @@ public class Movement : MonoBehaviour
         isDialogue = DialogueManager.IsDialogue;
 
         Falling();
+        if (isDialogue)
+        {
+            run.Stop();
+        }
         if (!isDialogue)
         {
             if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.35f)
@@ -85,6 +90,7 @@ public class Movement : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D col)
     {
+
         if (col.CompareTag("Ground"))
         {
             isGrounded = false;

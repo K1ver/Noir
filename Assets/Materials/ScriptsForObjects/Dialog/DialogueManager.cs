@@ -34,9 +34,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        detectiveAnim.SetInteger("AnimState", 0);
+        detectiveAnim.SetInteger("AnimState", 0); 
         isDialogue = true;
-
 
         boxAnim.SetBool("BoxOpen", true);
         iconAnim.SetBool("IconOpen", true);

@@ -17,7 +17,6 @@ public class DialogueManagerForCutScene : MonoBehaviour
     private Sprite[] spriteImage;
     private Queue<string> sentences;
     public PlayableDirector director;
-    private bool fix = false;
 
     private static bool isDialogue;
 
